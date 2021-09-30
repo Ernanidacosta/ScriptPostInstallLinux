@@ -4,6 +4,7 @@ sudo sed -i "/^# deb.*multiverse/ s/^# //" /etc/apt/sources.list
 
 sudo apt-get update -y
 sudo apt-get upgrade -y
+sudo apt-get install -y build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm gettext libncurses5-dev tk-dev tcl-dev blt-dev libgdbm-dev git python-dev python3-dev aria2 vim libnss3-tools python3-venv liblzma-dev
 
 sudo apt-get install -y \
     build-essential \
@@ -16,6 +17,8 @@ sudo apt-get install -y \
     tilix \
     parcellite \
     flameshot \
+    synaptics \
+    
     
 
 
