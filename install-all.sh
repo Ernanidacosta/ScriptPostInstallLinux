@@ -39,8 +39,14 @@ sudo apt-get install -y \
     timeshift \
     variety \
     obs-studio \
-
+    libxss1 \
+    libappindicator1 \
+    libindicator7 \
     
+
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo apt install ./google-chrome*.deb
+
 sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg 
 
 echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser-release.list 
@@ -52,3 +58,7 @@ sudo apt-get install -y zsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 sudo apt-get install -y python-pip python-dev python-virtualenv
+
+curl https://pyenv.run | bash
+pyenv install 3.9.0
+pyenv install 2.7.14
