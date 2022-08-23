@@ -14,8 +14,6 @@ sudo apt-get install -y \
     curl \
     libssl-dev \
     git \
-    openjdk-7-jre-headless \ 
-    apt-transport-https \
     tilix \
     parcellite \
     flameshot \
@@ -30,7 +28,7 @@ sudo apt-get install -y \
     libgdbm-dev \
     git \
     python-dev \ 
-    aria2 \
+    aria2c \
     vim\
     libnss3-tools\
     python3-venv \
